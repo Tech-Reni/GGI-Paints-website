@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGI PAINTS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            font-family: sans-serif;
+        }
+
+        /* wrapper keeps the image centered in viewport on small screens */
+        .img-wrapper {
+            display: block;
+            padding: 20px;
+        }
+
+        /* responsive image sizing */
+        .responsive-img {
+            display: block;
+            width: 50%;
+            max-width: 600px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Mobile: make the image smaller and center vertically/horizontally */
+        @media (max-width: 600px) {
+            .img-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                padding: 16px;
+            }
+            .responsive-img {
+                width: 80%;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img-wrapper">
+        <img class="responsive-img" src="GGI PAINTS LOGO.png" alt="Logo">
+    </div>
+</body>
+</html>
