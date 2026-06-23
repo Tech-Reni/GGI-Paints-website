@@ -1,52 +1,2206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GGI PAINTS</title>
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="GGI Paints">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    <meta name="theme-color" content="#1A73E8">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Primary SEO -->
+    <title>GGI Paints | Premium Wall, Gate & Industrial Paints in Nigeria</title>
+    <meta name="description"
+        content="GGI Paints provides premium wall paints, gate paints, industrial coatings, decorative finishes, roof paints and protective coatings designed for superior coverage and long-lasting durability.">
+    <meta name="keywords"
+        content="paint company nigeria, wall paints nigeria, industrial paints, gate paints, decorative paints, roof paints, paint manufacturer, premium paints, paint suppliers nigeria, protective coatings, primers, paint products">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GGI Paints">
+    <meta property="og:description"
+        content="Premium paints and coatings for homes, businesses and industrial projects.">
+    <meta property="og:image" content="/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://ggipaints.com">
+    <meta property="og:site_name" content="GGI Paints">
+
+    <!-- Twitter SEO -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GGI Paints">
+    <meta name="twitter:description" content="Premium paints for walls, gates, roofs and industrial projects.">
+    <meta name="twitter:image" content="/assets/images/og-image.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ggipaints.com">
+
+    <!-- Fonts & Libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- JSON-LD Schema Markups -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://ggipaints.com/#organization",
+          "name": "GGI Paints",
+          "url": "https://ggipaints.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://ggipaints.com/logo.png"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+234-800-GGI-PAINTS",
+            "contactType": "sales",
+            "areaServed": "NG",
+            "availableLanguage": "en"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://ggipaints.com/#localbusiness",
+          "name": "GGI Paints Headquarters",
+          "image": "https://ggipaints.com/assets/images/showroom.jpg",
+          "telePhone": "+234-800-GGI-PAINTS",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "12 Paint Makers Avenue, Industrial Estate",
+            "addressLocality": "Lagos",
+            "addressRegion": "Lagos State",
+            "postalCode": "100001",
+            "addressCountry": "NG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "6.5244",
+            "longitude": "3.3792"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://ggipaints.com/#product",
+          "name": "GGI Premium Wall Paint",
+          "image": "https://ggipaints.com/assets/images/wall-paint.jpg",
+          "description": "Premium quality wall paint engineered for ultimate durability, excellent coverage, and vibrant visual appeal.",
+          "brand": {
+            "@type": "Brand",
+            "name": "GGI Paints"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "NGN",
+            "lowPrice": "15000",
+            "highPrice": "85000",
+            "offerCount": "12"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ggipaints.com/#website",
+          "url": "https://ggipaints.com",
+          "name": "GGI Paints",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://ggipaints.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://ggipaints.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://ggipaints.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Products",
+              "item": "https://ggipaints.com#products"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <style>
-        body {
+        :root {
+            --primary: #1A73E8;
+            --green: #34A853;
+            --yellow: #FBBC05;
+            --red: #EA4335;
+            --dark: #0F172A;
+            --white: #FFFFFF;
+            --light: #F8FAFC;
+            --gray-100: #F1F5F9;
+            --gray-200: #E2E8F0;
+            --gray-400: #94A3B8;
+            --gray-600: #475569;
+            --gradient-primary: linear-gradient(135deg, #1A73E8 0%, #0d47a1 100%);
+            --gradient-multi: linear-gradient(135deg, #1A73E8 0%, #34A853 40%, #FBBC05 70%, #EA4335 100%);
+            --glass-bg: rgba(255, 255, 255, 0.75);
+            --glass-border: rgba(15, 23, 42, 0.08);
+            --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+            --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .dark-mode {
+            --dark: #F8FAFC;
+            --white: #0F172A;
+            --light: #1E293B;
+            --gray-100: #1E293B;
+            --gray-200: #334155;
+            --gray-400: #64748B;
+            --gray-600: #94A3B8;
+            --glass-bg: rgba(15, 23, 42, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
-            font-family: sans-serif;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: auto;
         }
 
-        /* wrapper keeps the image centered in viewport on small screens */
-        .img-wrapper {
-            display: block;
-            padding: 20px;
+        body {
+            background-color: var(--white);
+            color: var(--dark);
+            overflow-x: hidden;
+            width: 100%;
+            transition: background-color var(--transition), color var(--transition);
         }
 
-        /* responsive image sizing */
-        .responsive-img {
-            display: block;
-            width: 50%;
-            max-width: 600px;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
+        /* Prevent potential horizontal alignment issues across layout engines */
+        html {
+            overflow-x: hidden;
+            width: 100%;
         }
 
-        /* Mobile: make the image smaller and center vertically/horizontally */
-        @media (max-width: 600px) {
-            .img-wrapper {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                min-height: 100vh;
-                padding: 16px;
+        /* Scrollbar & Progress */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--light);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gray-400);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary);
+        }
+
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: var(--gradient-multi);
+            width: 0%;
+            z-index: 9999;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Page Loader */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0F172A;
+            z-index: 10000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+        }
+
+        .loader-logo {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #FFFFFF;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .paint-drip-container {
+            width: 60px;
+            height: 60px;
+            position: relative;
+        }
+
+        .drip {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            position: absolute;
+            background: var(--primary);
+            animation: bounce 1.2s infinite ease-in-out;
+        }
+
+        .drip:nth-child(2) {
+            background: var(--green);
+            left: 20px;
+            animation-delay: 0.2s;
+        }
+
+        .drip:nth-child(3) {
+            background: var(--yellow);
+            left: 40px;
+            animation-delay: 0.4s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
             }
-            .responsive-img {
-                width: 80%;
-                max-width: 320px;
+
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+        /* Global Classes */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 120px 0;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            background: var(--gray-100);
+            border: 1px solid var(--glass-border);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 20px;
+            gap: 8px;
+        }
+
+        .section-title {
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            line-height: 1.15;
+            margin-bottom: 18px;
+        }
+
+        .section-desc {
+            font-size: 1.15rem;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin-bottom: 48px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #FFFFFF;
+            border: none;
+            box-shadow: 0 4px 14px rgba(26, 115, 232, 0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 115, 232, 0.35);
+        }
+
+        .btn-secondary {
+            background: var(--glass-bg);
+            color: var(--dark);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(8px);
+        }
+
+        .btn-secondary:hover {
+            background: var(--gray-100);
+            transform: translateY(-2px);
+        }
+
+        /* Glass Cards */
+        .glass-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            backdrop-filter: blur(16px);
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+
+        /* Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 12px 0;
+        }
+
+        header:not(.scrolled) {
+            padding: 24px 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            background: var(--gradient-multi);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            opacity: 0.85;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+            opacity: 1;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--dark);
+            font-size: 1.3rem;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .theme-toggle:hover {
+            background: var(--gray-100);
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        /* SECTION 1 - HERO */
+        #hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: radial-gradient(circle at 80% 20%, rgba(26, 115, 232, 0.08) 0%, rgba(255, 255, 255, 0) 60%),
+                radial-gradient(circle at 20% 80%, rgba(54, 168, 83, 0.06) 0%, rgba(255, 255, 255, 0) 60%);
+            padding-top: 100px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+            font-weight: 800;
+            letter-spacing: -2.5px;
+            line-height: 1.05;
+            margin-bottom: 24px;
+        }
+
+        .hero-title span {
+            background: var(--gradient-multi);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: var(--gray-600);
+            margin-bottom: 40px;
+            max-width: 580px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+
+        .splash-shape {
+            position: absolute;
+            width: 110%;
+            height: 110%;
+            z-index: 1;
+            filter: blur(10px);
+            opacity: 0.85;
+            animation: pulse-slow 10s infinite ease-in-out;
+        }
+
+        .bucket-wrapper {
+            position: relative;
+            z-index: 2;
+            width: 320px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .floating-bucket {
+            width: 100%;
+            filter: drop-shadow(0 20px 40px rgba(15, 23, 42, 0.25));
+            animation: float 6s infinite ease-in-out;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(2deg);
+            }
+        }
+
+        @keyframes pulse-slow {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.75;
+            }
+
+            50% {
+                transform: scale(1.08);
+                opacity: 0.9;
+            }
+        }
+
+        /* SECTION 2 - ABOUT + STATS */
+        #about {
+            background-color: var(--light);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--gray-600);
+            margin-bottom: 24px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .stat-card {
+            padding: 32px 24px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+        }
+
+        .stat-num {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--gray-600);
+        }
+
+        /* SECTION 3 - PRODUCTS */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            padding: 32px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 380px;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-primary);
+            transition: var(--transition);
+        }
+
+        .product-card:hover::before {
+            height: 8px;
+        }
+
+        .product-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .product-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #FFFFFF;
+        }
+
+        .icon-blue {
+            background: var(--gradient-primary);
+        }
+
+        .icon-green {
+            background: linear-gradient(135deg, var(--green), #2e7d32);
+        }
+
+        .icon-yellow {
+            background: linear-gradient(135deg, var(--yellow), #f57f17);
+        }
+
+        .icon-red {
+            background: linear-gradient(135deg, var(--red), #c62828);
+        }
+
+        .icon-purple {
+            background: linear-gradient(135deg, #7b1fa2, #4a148c);
+        }
+
+        .icon-teal {
+            background: linear-gradient(135deg, #00796b, #004d40);
+        }
+
+        .product-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .product-card p {
+            color: var(--gray-600);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: auto;
+        }
+
+        .product-footer {
+            margin-top: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.12);
+        }
+
+        /* SECTION 4 - WHY GGI PAINTS */
+        #why-ggi {
+            background-color: var(--light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+            box-shadow: var(--card-shadow);
+        }
+
+        .feature-icon-wrapper {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(26, 115, 232, 0.1);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .feature-card h4 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            line-height: 1.45;
+        }
+
+        /* SECTION 5 - PROJECT GALLERY */
+        .gallery-filter {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--gray-100);
+            border: 1px solid var(--glass-border);
+            padding: 10px 20px;
+            border-radius: 100px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--dark);
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--primary);
+            color: #FFFFFF;
+            border-color: var(--primary);
+        }
+
+        .gallery-swiper {
+            width: 100%;
+            padding-bottom: 50px !important;
+        }
+
+        .swiper-slide {
+            height: 450px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.3) 50%, transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 40px;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .swiper-slide:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .swiper-slide:hover .gallery-img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay h4 {
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .gallery-overlay p {
+            color: var(--gray-400);
+            font-size: 0.95rem;
+        }
+
+        .gallery-lightbox-trigger {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-size: 1.25rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .swiper-slide:hover .gallery-lightbox-trigger {
+            opacity: 1;
+        }
+
+        /* Lightbox CSS */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            z-index: 10000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 12px;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: #FFFFFF;
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+
+        /* SECTION 6 - CONTACT & CTA & FOOTER */
+        #contact {
+            background: radial-gradient(circle at 10% 90%, rgba(26, 115, 232, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 90% 10%, rgba(234, 67, 53, 0.1) 0%, transparent 50%),
+                var(--light);
+            border-top: 1px solid var(--gray-200);
+            position: relative;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: flex-start;
+        }
+
+        .contact-form-wrapper {
+            padding: 40px;
+        }
+
+        .form-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: -0.5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 14px;
+            border-radius: 8px;
+            border: 1px solid var(--gray-200);
+            background: var(--white);
+            color: var(--dark);
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.15);
+        }
+
+        textarea.form-input {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-info-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .info-card {
+            padding: 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .info-icon {
+            font-size: 1.6rem;
+            color: var(--primary);
+        }
+
+        .info-details h5 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .info-details p,
+        .info-details a {
+            font-size: 0.95rem;
+            color: var(--gray-600);
+            text-decoration: none;
+        }
+
+        .map-wrapper {
+            border-radius: 16px;
+            overflow: hidden;
+            height: 250px;
+            border: 1px solid var(--glass-border);
+        }
+
+        /* Modern Integrated Footer */
+        .footer-bottom {
+            margin-top: 100px;
+            padding-top: 40px;
+            border-top: 1px solid var(--gray-200);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: var(--gray-600);
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+        }
+
+        /* Floating Widgets */
+        #back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #FFFFFF;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        #back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #back-to-top:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        #whatsapp-bubble {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #25D366;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            z-index: 999;
+            transition: var(--transition);
+        }
+
+        #whatsapp-bubble:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+        }
+
+        .pulse-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #25D366;
+            opacity: 0.4;
+            animation: pulse-ring-anim 1.8s infinite;
+            z-index: -1;
+        }
+
+        @keyframes pulse-ring-anim {
+            0% {
+                transform: scale(1);
+                opacity: 0.4;
+            }
+
+            100% {
+                transform: scale(1.4);
+                opacity: 0;
+            }
+        }
+
+        /* RESPONSIVE LAYOUT MEDIA QUERIES */
+
+        /* Tablets and general mobile landscape viewports */
+        @media (max-width: 991px) {
+
+            /* Navbar adjustments: SHOW ONLY LOGO AND HAMBURGER MENU */
+            header#navbar .nav-right .theme-toggle,
+            header#navbar .nav-right .btn-primary {
+                display: none !important;
+            }
+
+            header#navbar .nav-right {
+                gap: 0;
+            }
+
+            header#navbar .menu-btn {
+                display: block !important;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 60px;
+            }
+
+            .hero-subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-visual {
+                height: 400px;
+            }
+
+            .bucket-wrapper {
+                width: 260px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                padding: 30px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                border-top: 1px solid var(--glass-border);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .section-padding {
+                padding: 80px 0;
+            }
+        }
+
+        /* Mobile Optimization (480px and below, including 375px/345px) */
+        @media (max-width: 480px) {
+
+            /* Adjust padding globally for smaller mobile interfaces */
+            .container {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            /* Hero Layout Overhaul */
+            #hero {
+                padding-top: 80px;
+                padding-bottom: 60px;
+            }
+
+            .badge {
+                font-size: 0.75rem;
+                padding: 6px 12px;
+            }
+
+            .hero-title {
+                font-size: 2.1rem !important;
+                letter-spacing: -1.2px;
+                line-height: 1.15;
+            }
+
+            .hero-subtitle {
+                font-size: 0.95rem;
+                margin-bottom: 28px;
+                line-height: 1.5;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+                gap: 12px;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+
+            /* Graphic Elements */
+            .hero-visual {
+                height: 280px;
+            }
+
+            .bucket-wrapper {
+                width: 170px !important;
+            }
+
+            /* Stats, About, and Grids stack adjustments */
+            .section-padding {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 1.85rem !important;
+            }
+
+            .section-desc {
+                font-size: 0.95rem;
+                margin-bottom: 32px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr !important;
+                gap: 16px;
+            }
+
+            .stat-card {
+                padding: 24px 16px;
+            }
+
+            .stat-num {
+                font-size: 2.3rem;
+            }
+
+            /* Product Grid stack adjustments */
+            .product-grid {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+
+            .product-card {
+                height: auto;
+                padding: 24px;
+            }
+
+            .product-card h3 {
+                font-size: 1.35rem;
+                margin-top: 16px;
+            }
+
+            /* Why GGI Features */
+            .features-grid {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+
+            .feature-card {
+                padding: 20px;
+            }
+
+            /* Gallery Filters */
+            .gallery-filter {
+                gap: 8px;
+                justify-content: center;
+            }
+
+            .filter-btn {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+
+            /* Form Elements */
+            .contact-form-wrapper {
+                padding: 24px 16px;
+            }
+
+            .form-title {
+                font-size: 1.5rem;
+                margin-bottom: 18px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr !important;
+                gap: 0 !important;
+            }
+
+            .form-input {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+
+            /* Widget positions */
+            #whatsapp-bubble {
+                bottom: 20px;
+                left: 20px;
+                width: 48px;
+                height: 48px;
+                font-size: 1.5rem;
+            }
+
+            #back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 44px;
+                height: 44px;
+                font-size: 1.2rem;
             }
         }
     </style>
 </head>
+
 <body>
-    <div class="img-wrapper">
-        <img class="responsive-img" src="GGI PAINTS LOGO.png" alt="Logo">
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Page Loader -->
+    <div id="loader">
+        <div class="loader-logo">
+            <span>GGI</span> Paints
+        </div>
+        <div class="paint-drip-container">
+            <div class="drip"></div>
+            <div class="drip"></div>
+            <div class="drip"></div>
+        </div>
     </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#hero" class="logo">
+                    <span>GGI</span> PAINTS
+                </a>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#why-ggi">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="ri-moon-line"></i>
+                    </button>
+                    <a href="#contact" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Request
+                        Quote</a>
+                    <i class="ri-menu-line menu-btn" id="menu-btn"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <br><br><br><br>
+
+    <!-- SECTION 1: HERO -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge" data-aos="fade-up">
+                        <i class="ri-award-line"></i> Nigeria's Leading Premium Paint Manufacturer
+                    </div>
+                    <h1 class="hero-title animate-text" data-aos="fade-up" data-aos-delay="100">
+                        Premium Paints For <span>Every Surface</span>
+                    </h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Transform your walls, gates, roofs and buildings with superior quality paints engineered for
+                        durability, vibrant longevity, and unmatched beauty.
+                    </p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#products" class="btn btn-primary">
+                            Explore Products <i class="ri-arrow-right-line"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Request Quote</a>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="zoom-in" data-aos-delay="400">
+                    <!-- SVG Paint Splash Gradient -->
+                    <svg class="splash-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#1A73E8" fill-opacity="0.15"
+                            d="M45.7,-77C59.4,-69.5,70.9,-56.9,78.2,-42.1C85.5,-27.3,88.5,-10.3,86.2,5.9C83.9,22.1,76.3,37.6,66.3,50.7C56.3,63.8,43.9,74.5,29.3,80.1C14.7,85.7,-2.1,86.3,-18.4,81.9C-34.7,77.5,-50.5,68.2,-61.8,55.1C-73.1,42,-79.9,25.1,-82.7,7.2C-85.4,-10.7,-84,-29.6,-75.1,-44.6C-66.2,-59.5,-49.8,-70.5,-33.5,-76.3C-17.2,-82.1,-1,-82.7,14.2,-80.6C29.4,-78.5,45.7,-77,45.7,-77Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                    <div class="bucket-wrapper">
+                        <!-- Custom Inline Clean Bucket Illustration representation for absolute self-containment -->
+                        <svg class="floating-bucket" viewBox="0 0 500 500" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="bucketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#1A73E8" />
+                                    <stop offset="100%" stop-color="#0F172A" />
+                                </linearGradient>
+                                <linearGradient id="lidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#34A853" />
+                                    <stop offset="100%" stop-color="#1A73E8" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Handle -->
+                            <path d="M120 180 C120 50, 380 50, 380 180" stroke="#94A3B8" stroke-width="12" fill="none"
+                                stroke-linecap="round" />
+                            <!-- Bucket Body -->
+                            <path
+                                d="M110 180 L150 440 C152 455, 170 460, 180 460 L320 460 C330 460, 348 455, 350 440 L390 180 Z"
+                                fill="url(#bucketGrad)" />
+                            <!-- Paint Dripping on Can -->
+                            <path d="M110 180 Q130 240, 170 240 Q210 240, 230 180" fill="#EA4335" />
+                            <path d="M230 180 Q250 280, 290 280 Q330 280, 350 180" fill="#FBBC05" />
+                            <!-- Rim/Lid -->
+                            <ellipse cx="250" cy="180" rx="145" ry="25" fill="url(#lidGrad)" />
+                            <!-- Metallic Accent Lines -->
+                            <path d="M150 440 L350 440" stroke="#FFFFFF" stroke-width="4" opacity="0.2" />
+                            <!-- Text overlay -->
+                            <text x="50%" y="340" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF"
+                                font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="28"
+                                letter-spacing="2">GGI PAINTS</text>
+                            <text x="50%" y="375" dominant-baseline="middle" text-anchor="middle" fill="#FBBC05"
+                                font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="16"
+                                letter-spacing="4">PREMIUM QUALITY</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT + STATS -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll" data-aos="fade-up">
+                    <div class="badge"><i class="ri-building-line"></i> About Our Legacy</div>
+                    <h2 class="section-title">Engineered to Protect and Beautify</h2>
+                    <p>At GGI Paints, we combine science and art to manufacture high-performance coatings that protect
+                        structures from extreme tropical elements while rendering jaw-dropping aesthetic value.</p>
+                    <p>Our formulations undergo strict testing paradigms to provide outstanding resistance to UV
+                        degradation, heavy downpours, high humidity, and structural stress. Every drop of GGI Paint
+                        promises unmatched coverage, deep pigmentation, and timeless refinement.</p>
+                    <a href="#why-ggi" class="btn btn-secondary">Learn More Quality Parameters</a>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card glass-card animate-on-scroll" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-num" id="stat-customers" data-target="10000">0</div>
+                        <div class="stat-label">Happy Homeowners & Entities</div>
+                    </div>
+                    <div class="stat-card glass-card animate-on-scroll" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-num" id="stat-projects" data-target="500">0</div>
+                        <div class="stat-label">Mega Projects Completed</div>
+                    </div>
+                    <div class="stat-card glass-card animate-on-scroll" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-num" id="stat-variants" data-target="100">0</div>
+                        <div class="stat-label">Bespoke Paint Formulations</div>
+                    </div>
+                    <div class="stat-card glass-card animate-on-scroll" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="stat-num" id="stat-satisfaction" data-target="99">0</div>
+                        <div class="stat-label">Client Retention & Satisfaction %</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PRODUCTS -->
+    <section id="products" class="section-padding">
+        <div class="container">
+            <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                <div class="badge"><i class="ri-paint-brush-line"></i> Premium Catalog</div>
+                <h2 class="section-title">Superior Paint Classifications</h2>
+                <p class="section-desc">Our versatile product lines satisfy specific residential, industrial, and
+                    protective infrastructure desires without compromising on standard parameters.</p>
+            </div>
+            <div class="product-grid">
+                <!-- Wall Paints -->
+                <div class="product-card glass-card animate-on-scroll" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-header">
+                        <div class="product-icon icon-blue"><i class="ri-home-4-line"></i></div>
+                        <span class="badge">Interior & Exterior</span>
+                    </div>
+                    <div>
+                        <h3>Wall Paints</h3>
+                        <p>Our premium interior and exterior emulsion and acrylic options offer extreme washability, low
+                            VOC emissions, and smooth finish textures.</p>
+                    </div>
+                    <a href="#contact" class="product-footer">Learn More <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <!-- Gate Paints -->
+                <div class="product-card glass-card animate-on-scroll" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-header">
+                        <div class="product-icon icon-green"><i class="ri-door-lock-line"></i></div>
+                        <span class="badge">Gloss & Satin</span>
+                    </div>
+                    <div>
+                        <h3>Gate & Metal Paints</h3>
+                        <p>Super-tough oil and alkyd-based enamel formulations configured with premium anti-corrosion
+                            barrier properties to protect gates and grills.</p>
+                    </div>
+                    <a href="#contact" class="product-footer">Learn More <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <!-- Roof Paints -->
+                <div class="product-card glass-card animate-on-scroll" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-header">
+                        <div class="product-icon icon-yellow"><i class="ri-home-gear-line"></i></div>
+                        <span class="badge">Thermal Protection</span>
+                    </div>
+                    <div>
+                        <h3>Roof Paints</h3>
+                        <p>Reflective cool-roofing coatings designed to decrease indoor temperature, defend against
+                            constant rain and UV wear.</p>
+                    </div>
+                    <a href="#contact" class="product-footer">Learn More <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <!-- Industrial Coatings -->
+                <div class="product-card glass-card animate-on-scroll" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-header">
+                        <div class="product-icon icon-red"><i class="ri-settings-4-line"></i></div>
+                        <span class="badge">Heavy Duty</span>
+                    </div>
+                    <div>
+                        <h3>Industrial Coatings</h3>
+                        <p>Epoxy floor self-leveling paints, traffic marking formulations, and heavy mechanical
+                            protective coatings for ultimate resilience.</p>
+                    </div>
+                    <a href="#contact" class="product-footer">Learn More <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <!-- Primers -->
+                <div class="product-card glass-card animate-on-scroll" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-header">
+                        <div class="product-icon icon-purple"><i class="ri-shield-check-line"></i></div>
+                        <span class="badge">Base Coat</span>
+                    </div>
+                    <div>
+                        <h3>Primers & Finishes</h3>
+                        <p>Undercoats that guarantee incredible paint adhesion, outstanding moisture barrier controls,
+                            and structural bonding perfection.</p>
+                    </div>
+                    <a href="#contact" class="product-footer">Learn More <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <!-- Decorative Finishes -->
+                <div class="product-card glass-card animate-on-scroll" data-aos="fade-up" data-aos-delay="600">
+                    <div class="product-header">
+                        <div class="product-icon icon-teal"><i class="ri-magic-line"></i></div>
+                        <span class="badge">Custom Texture</span>
+                    </div>
+                    <div>
+                        <h3>Decorative Finishes</h3>
+                        <p>Luxurious stucco, marble finishes, high-end metallic sparkles, and specialized textured
+                            renderings for premium walls.</p>
+                    </div>
+                    <a href="#contact" class="product-footer">Learn More <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: WHY GGI PAINTS -->
+    <section id="why-ggi" class="section-padding">
+        <div class="container">
+            <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                <div class="badge"><i class="ri-star-line"></i> The GGI Standard</div>
+                <h2 class="section-title">Engineered to Perform</h2>
+                <p class="section-desc">Why developers, luxury architects, and premium estate owners consistently choose
+                    GGI Paints for top-tier projects.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon-wrapper"><i class="ri-checkbox-circle-fill"></i></div>
+                    <h4>Superior Coverage</h4>
+                    <p>Our rich, high-density pigment system requires fewer coats, offering remarkable surface spread
+                        and hiding metrics.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="150">
+                    <div class="feature-icon-wrapper" style="color: var(--green); background: rgba(52, 168, 83, 0.1);">
+                        <i class="ri-cloud-windy-line"></i>
+                    </div>
+                    <h4>Weather Resistant</h4>
+                    <p>Engineered with special resins to defend perfectly against high humidity, salty air, and tropical
+                        rainfall.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon-wrapper" style="color: var(--yellow); background: rgba(251, 188, 5, 0.1);">
+                        <i class="ri-sun-line"></i>
+                    </div>
+                    <h4>Fade Resistant</h4>
+                    <p>Incorporates specialized UV blockers that preserve rich, dynamic pigments from weathering under
+                        strong sunlight.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-icon-wrapper" style="color: var(--red); background: rgba(234, 67, 53, 0.1);"><i
+                            class="ri-leaf-line"></i></div>
+                    <h4>Eco Friendly</h4>
+                    <p>Very low VOC and odor emissions, ensuring human-safe indoor air levels immediately following
+                        dynamic applications.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon-wrapper"><i class="ri-shield-flash-line"></i></div>
+                    <h4>Long Lasting</h4>
+                    <p>Designed not to crack, flake, peel, or blister for up to 10 years, dramatically lowering
+                        structural repair budgets.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="350">
+                    <div class="feature-icon-wrapper" style="color: var(--green); background: rgba(52, 168, 83, 0.1);">
+                        <i class="ri-hourglass-2-line"></i>
+                    </div>
+                    <h4>Quick Drying</h4>
+                    <p>Fast dry-to-touch rates allow decorators to run successive coat sessions swiftly within minimal
+                        turnaround windows.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon-wrapper" style="color: var(--yellow); background: rgba(251, 188, 5, 0.1);">
+                        <i class="ri-sparkling-fill"></i>
+                    </div>
+                    <h4>Premium Finish</h4>
+                    <p>Flawless levels of satin sheen, architectural matte, glossy sheens, and refined rustic texture
+                        displays.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="450">
+                    <div class="feature-icon-wrapper" style="color: var(--red); background: rgba(234, 67, 53, 0.1);"><i
+                            class="ri-coins-line"></i></div>
+                    <h4>Cost Effective</h4>
+                    <p>Its superior spread density means lower volume requirements per square meter, optimizing coating
+                        overheads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: PROJECT GALLERY -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                <div class="badge"><i class="ri-gallery-line"></i> Completed Showcases</div>
+                <h2 class="section-title">The Proof is in the Projects</h2>
+                <p class="section-desc">View our architectural, commercial, and heavy-duty structural applications done
+                    on-site across diverse real estate environments.</p>
+            </div>
+
+            <div class="gallery-filter animate-on-scroll" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+            </div>
+
+            <!-- Swiper Carousel Grid -->
+            <div class="swiper gallery-swiper animate-on-scroll" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <div class="swiper-slide" data-category="residential">
+                        <!-- Simulated modern structural photos via placeholder for guaranteed visual beauty -->
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                            alt="Luxury Villa Estate Painting" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>The Horizon Villa</h4>
+                            <p>Premium Satin Emulsion finish on a modern residential masterpiece.</p>
+                        </div>
+                        <div class="gallery-lightbox-trigger" onclick="openLightbox(this)"><i
+                                class="ri-zoom-in-line"></i></div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="swiper-slide" data-category="commercial">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+                            alt="High-Rise Corporate Headquarters Coating" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Summit Towers</h4>
+                            <p>Anti-carbonation protective outer coatings for a high-rise office complex.</p>
+                        </div>
+                        <div class="gallery-lightbox-trigger" onclick="openLightbox(this)"><i
+                                class="ri-zoom-in-line"></i></div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="swiper-slide" data-category="industrial">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+                            alt="Heavy Industrial Complex Flooring" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Apex Logistics Hub</h4>
+                            <p>Heavy duty self-leveling Epoxy floor coatings & high durability steel primers.</p>
+                        </div>
+                        <div class="gallery-lightbox-trigger" onclick="openLightbox(this)"><i
+                                class="ri-zoom-in-line"></i></div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="swiper-slide" data-category="residential">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+                            alt="Modern Penthouse Coatings" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Lighthouse Penthouse</h4>
+                            <p>Custom Stucco decorative wall treatments and ultra-white roof cooling systems.</p>
+                        </div>
+                        <div class="gallery-lightbox-trigger" onclick="openLightbox(this)"><i
+                                class="ri-zoom-in-line"></i></div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="swiper-slide" data-category="commercial">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+                            alt="Corporate Showroom Painting" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Capital Exchange Hall</h4>
+                            <p>Sophisticated matte premium finishes matched to dynamic corporate color profiles.</p>
+                        </div>
+                        <div class="gallery-lightbox-trigger" onclick="openLightbox(this)"><i
+                                class="ri-zoom-in-line"></i></div>
+                    </div>
+                </div>
+                <!-- Pagination / Nav buttons -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Lightbox Element -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged Project View">
+    </div>
+
+    <!-- SECTION 6: CONTACT & CTA & FOOTER -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-wrapper glass-card animate-on-scroll" data-aos="fade-up">
+                    <h3 class="form-title">Request Professional Quote</h3>
+                    <form id="quoteForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label class="form-label" for="fullname">Full Name</label>
+                            <input type="text" id="fullname" class="form-input" placeholder="e.g. John Doe" required>
+                        </div>
+                        <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email Address</label>
+                                <input type="email" id="email" class="form-input" placeholder="john@example.com"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="form-input" placeholder="+234..." required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="paint_type">Primary Coating Required</label>
+                            <select id="paint_type" class="form-input" required>
+                                <option value="" disabled selected>Select paint category...</option>
+                                <option value="wall">Wall Paints (Interior/Exterior)</option>
+                                <option value="gate">Gate & Metal Paints</option>
+                                <option value="roof">Roof Paints</option>
+                                <option value="industrial">Industrial Coatings</option>
+                                <option value="decorative">Decorative Textures & Stucco</option>
+                                <option value="primers">Primers & Base Coats</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Project Description & Approximate Area (sqm)</label>
+                            <textarea id="message" class="form-input"
+                                placeholder="Describe your painting project scope, colors required, or surface issues..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry & Get Quote <i
+                                class="ri-send-plane-line"></i></button>
+                    </form>
+                </div>
+
+                <div class="contact-info-panel animate-on-scroll" data-aos="fade-up">
+                    <div style="margin-bottom: 12px;">
+                        <div class="badge"><i class="ri-customer-service-line"></i> Get In Touch</div>
+                        <h3 class="section-title" style="font-size: 2.2rem; margin-bottom: 12px;">Let's Transform Your
+                            Structures</h3>
+                        <p style="color: var(--gray-600); line-height: 1.6;">Our coating estimators and technicians are
+                            available to offer professional color consulatations, site inspections, and customized quote
+                            outlines.</p>
+                    </div>
+
+                    <div class="info-card glass-card">
+                        <div class="info-icon"><i class="ri-phone-line"></i></div>
+                        <div class="info-details">
+                            <h5>Direct Hotline</h5>
+                            <p><a href="tel:+234800444724687">+234 (800) GGI-PAINTS</a></p>
+                            <p><a href="tel:+2348031234567">+234 (803) 123-4567</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card glass-card">
+                        <div class="info-icon"><i class="ri-mail-line"></i></div>
+                        <div class="info-details">
+                            <h5>Corporate Inquiry Email</h5>
+                            <p><a href="mailto:info@ggipaints.com">info@ggipaints.com</a></p>
+                            <p><a href="mailto:estimates@ggipaints.com">estimates@ggipaints.com</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Modern Interactive Map Mockup -->
+                    <div class="map-wrapper">
+                        <!-- Fully functional Google Maps location embed centered on premium industrial site -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126839.04780614139!2d3.350361131239965!3d6.524379346610091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1710000000000!5m2!1sen!2sng"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integrated Minimalist Footer Bottom -->
+            <div class="footer-bottom">
+                <div>
+                    <a href="#hero" class="logo" style="margin-bottom: 10px;">
+                        <span>GGI</span> PAINTS
+                    </a>
+                    <div class="copyright">&copy; 2026 GGI Paints Industry Limited. All Rights Reserved.</div>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Privacy Policy</a>
+                    <a href="#products">Quality Standards</a>
+                    <a href="#about">Technical Data Sheets</a>
+                    <a href="#contact">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating UI Widgets -->
+    <button id="back-to-top" onclick="scrollToTop()" aria-label="Back to Top"><i class="ri-arrow-up-line"></i></button>
+    <a href="https://wa.me/2348031234567?text=Hello%20GGI%20Paints%2C%20I'm%20interested%20in%20requesting%20a%20paints%20quote."
+        target="_blank" id="whatsapp-bubble" aria-label="Chat on WhatsApp">
+        <div class="pulse-ring"></div>
+        <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <!-- Dynamic JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
+    <script>
+        // Page Loader Disabler
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.visibility = 'hidden';
+
+                // JAVASCRIPT ANIMATION OVERRIDE:
+                // Safely intercepts and replaces side-to-side transitions with vertical movements.
+                // This eliminates off-screen clipping on compact viewports (345px-480px).
+                document.querySelectorAll('[data-aos]').forEach(el => {
+                    const animationType = el.getAttribute('data-aos');
+                    if (animationType && (animationType.includes('left') || animationType.includes('right'))) {
+                        el.setAttribute('data-aos', 'fade-up');
+                    }
+                });
+
+                // Initialize entrance animations via AOS after loader hides
+                AOS.init({
+                    duration: 1000,
+                    easing: 'ease-out-cubic',
+                    once: true,
+                    offset: 50
+                });
+                startCountUps();
+            }, 500);
+        });
+
+        // Initialize Smooth Scrolling (Lenis)
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false,
+            touchMultiplier: 2,
+            infinite: false,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        // Bind Lenis scroll to GSAP scrollTrigger
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 1000);
+        });
+        gsap.ticker.lagSmoothing(0);
+
+        // Scroll Progress Bar Update
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('scroll-progress').style.width = scrolled + '%';
+
+            // Navbar Scrolled Glass effect
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Back to Top button visibility
+            const btt = document.getElementById('back-to-top');
+            if (window.scrollY > 400) {
+                btt.classList.add('visible');
+            } else {
+                btt.classList.remove('visible');
+            }
+        });
+
+        // Scroll to Top action
+        function scrollToTop() {
+            lenis.scrollTo('#hero', { duration: 1.5 });
+        }
+
+        // Dark Mode Logic with LocalStorage Integration
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+
+        const enableDarkMode = () => {
+            document.body.classList.add('dark-mode');
+            themeIcon.className = 'ri-sun-line';
+            localStorage.setItem('theme', 'dark');
+        };
+
+        const disableDarkMode = () => {
+            document.body.classList.remove('dark-mode');
+            themeIcon.className = 'ri-moon-line';
+            localStorage.setItem('theme', 'light');
+        };
+
+        // Check local storage preference
+        if (localStorage.getItem('theme') === 'dark') {
+            enableDarkMode();
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (document.body.classList.contains('dark-mode')) {
+                disableDarkMode();
+            } else {
+                enableDarkMode();
+            }
+        });
+
+        // Mobile Menu Toggling mechanism
+        const menuBtn = document.getElementById('menu-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            if (navLinks.classList.contains('active')) {
+                menuBtn.className = 'ri-close-line menu-btn';
+            } else {
+                menuBtn.className = 'ri-menu-line menu-btn';
+            }
+        });
+
+        // Close mobile nav when link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuBtn.className = 'ri-menu-line menu-btn';
+            });
+        });
+
+        // CountUp Animation Logic using Vanilla JS IntersectionObserver for seamless lightweight execution
+        function startCountUps() {
+            const stats = [
+                { id: 'stat-customers', suffix: '+' },
+                { id: 'stat-projects', suffix: '+' },
+                { id: 'stat-variants', suffix: '+' },
+                { id: 'stat-satisfaction', suffix: '%' }
+            ];
+
+            const countUpElement = (el, targetValue, suffix) => {
+                let startValue = 0;
+                const duration = 2000;
+                const stepTime = Math.abs(Math.floor(duration / targetValue));
+
+                const timer = setInterval(() => {
+                    startValue += Math.ceil(targetValue / 100);
+                    if (startValue >= targetValue) {
+                        el.innerText = targetValue.toLocaleString() + suffix;
+                        clearInterval(timer);
+                    } else {
+                        el.innerText = startValue.toLocaleString() + suffix;
+                    }
+                }, Math.min(stepTime, 30));
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const finalVal = parseInt(target.getAttribute('data-target'));
+                        const statObj = stats.find(s => s.id === target.id);
+                        countUpElement(target, finalVal, statObj ? statObj.suffix : '');
+                        observer.unobserve(target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            stats.forEach(stat => {
+                const el = document.getElementById(stat.id);
+                if (el) observer.observe(el);
+            });
+        }
+
+        // GSAP Core Micro-Interactions
+        gsap.from('.hero-title span', {
+            backgroundPosition: '200% center',
+            duration: 3,
+            repeat: -1,
+            ease: 'linear'
+        });
+
+        // Hover effect for Products (3D Tilt-like micro-animations with GSAP)
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left - (rect.width / 2);
+                const y = e.clientY - rect.top - (rect.height / 2);
+                gsap.to(card, {
+                    rotationY: x * 0.05,
+                    rotationX: -y * 0.05,
+                    translateZ: 10,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            });
+
+            card.addEventListener('mouseleave', () => {
+                gsap.to(card, {
+                    rotationY: 0,
+                    rotationX: 0,
+                    translateZ: 0,
+                    duration: 0.5,
+                    ease: 'power2.out'
+                });
+            });
+        });
+
+        // Swiper Gallery Configuration
+        const swiper = new Swiper('.gallery-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+
+        // Gallery Filter System
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const slides = document.querySelectorAll('.swiper-slide');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                // Destroy and recreate Swiper with filter to avoid UI calculation breakage
+                swiper.destroy(true, true);
+
+                slides.forEach(slide => {
+                    const category = slide.getAttribute('data-category');
+                    if (filterValue === 'all' || category === filterValue) {
+                        slide.style.display = 'block';
+                    } else {
+                        slide.style.display = 'none';
+                    }
+                });
+
+                // Re-initialize Swiper inside the filtered elements
+                new Swiper('.gallery-swiper', {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    grabCursor: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                        dynamicBullets: true,
+                    },
+                    breakpoints: {
+                        640: { slidesPerView: 2 },
+                        1024: { slidesPerView: 3 }
+                    }
+                });
+            });
+        });
+
+        // Lightbox Dynamic Operations
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        function openLightbox(triggerElement) {
+            const slide = triggerElement.closest('.swiper-slide');
+            const imgElement = slide.querySelector('.gallery-img');
+            lightboxImg.src = imgElement.src;
+            lightbox.style.display = 'flex';
+            // Pause page scroll while lightbox is open
+            lenis.stop();
+        }
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+            // Resume page scroll
+            lenis.start();
+        }
+
+        // Form Submit Handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            // Elegant micro-interaction on completion mock
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalHTML = submitBtn.innerHTML;
+
+            submitBtn.disabled = true;
+            submitBtn.style.backgroundColor = 'var(--green)';
+            submitBtn.innerHTML = 'Sending Details... <i class="ri-loader-4-line" style="animation: spin 1s infinite linear;"></i>';
+
+            setTimeout(() => {
+                submitBtn.innerHTML = 'Estimate Request Submitted! <i class="ri-checkbox-circle-line"></i>';
+                e.target.reset();
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.style.backgroundColor = '';
+                    submitBtn.innerHTML = originalHTML;
+                }, 3000);
+            }, 1500);
+        }
+    </script>
+    <style>
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </body>
+
 </html>
