@@ -542,6 +542,15 @@
             height: 500px;
         }
 
+        .hero-logo-img {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 20px 40px rgba(15, 23, 42, 0.25));
+            animation: float 6s infinite ease-in-out;
+        }
+
         .splash-shape {
             position: absolute;
             width: 110%;
@@ -727,6 +736,33 @@
         .product-card:hover .product-card__content {
             transform: translateY(0);
             opacity: 1;
+        }
+
+        .product-card__preview-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            z-index: 3;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-size: 1.75rem;
+            opacity: 0;
+            transition: var(--transition);
+            pointer-events: none;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .product-card:hover .product-card__preview-icon {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
         }
 
         .product-card h3 {
@@ -975,6 +1011,224 @@
             color: #FFFFFF;
             font-size: 2.5rem;
             cursor: pointer;
+        }
+
+        /* Product Preview Modal CSS */
+        .product-preview {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10001;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product-preview.active {
+            display: flex;
+        }
+
+        .product-preview__backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(8px);
+        }
+
+        .product-preview__content {
+            position: relative;
+            z-index: 2;
+            background: var(--white);
+            border-radius: 24px;
+            max-width: 900px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            box-shadow: 0 30px 60px -20px rgba(15, 23, 42, 0.5);
+            animation: previewIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes previewIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .product-preview__close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            z-index: 10;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--gray-100);
+            border: 1px solid var(--gray-200);
+            color: var(--dark);
+            font-size: 1.25rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .product-preview__close:hover {
+            background: var(--gray-200);
+            transform: rotate(90deg);
+        }
+
+        .product-preview__image-wrapper {
+            position: relative;
+            height: 100%;
+            min-height: 400px;
+            overflow: hidden;
+            border-radius: 24px 0 0 24px;
+        }
+
+        .product-preview__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .product-preview__details {
+            padding: 48px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-preview__tag {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            align-self: flex-start;
+        }
+
+        .product-preview__title {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+            color: var(--dark);
+            line-height: 1.2;
+        }
+
+        .product-preview__desc {
+            font-size: 1.05rem;
+            color: var(--gray-600);
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+
+        .dark-mode .product-preview__content {
+            background: var(--light);
+            border: 1px solid var(--glass-border);
+        }
+
+        .dark-mode .product-preview__title {
+            color: var(--white);
+        }
+
+        .dark-mode .product-preview__close {
+            background: var(--gray-200);
+            border-color: var(--gray-400);
+            color: var(--white);
+        }
+
+        .dark-mode .product-preview__close:hover {
+            background: var(--gray-400);
+        }
+
+        /* Product Preview Responsive Styles */
+        @media (max-width: 768px) {
+            .product-preview__content {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            .product-preview__image-wrapper {
+                min-height: 250px;
+                max-height: 300px;
+                border-radius: 24px 24px 0 0;
+            }
+
+            .product-preview__details {
+                padding: 32px 24px;
+            }
+
+            .product-preview__title {
+                font-size: 1.5rem;
+            }
+
+            .product-preview__desc {
+                font-size: 0.95rem;
+            }
+
+            .product-preview__close {
+                top: 12px;
+                right: 12px;
+                width: 36px;
+                height: 36px;
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-preview__content {
+                width: 95%;
+                border-radius: 20px;
+            }
+
+            .product-preview__image-wrapper {
+                min-height: 200px;
+                max-height: 250px;
+                border-radius: 20px 20px 0 0;
+            }
+
+            .product-preview__details {
+                padding: 24px 20px;
+            }
+
+            .product-preview__tag {
+                font-size: 0.78rem;
+                padding: 6px 12px;
+            }
+
+            .product-preview__title {
+                font-size: 1.3rem;
+                margin-bottom: 12px;
+            }
+
+            .product-preview__desc {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+
+            .product-preview__close {
+                top: 10px;
+                right: 10px;
+                width: 32px;
+                height: 32px;
+                font-size: 1rem;
+            }
         }
 
         /* SECTION 6 - CONTACT & CTA & FOOTER */
@@ -1395,7 +1649,7 @@
                 padding: 8px 16px;
                 font-size: 0.85rem;
             }
-
+hero-visual
             /* Form Elements */
             .contact-form-wrapper {
                 padding: 24px 16px;
@@ -1505,49 +1759,7 @@
                     </div>
                 </div>
                 <div class="hero-visual" data-aos="zoom-in" data-aos-delay="400">
-                    <!-- SVG Paint Splash Gradient -->
-                    <svg class="splash-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#1A73E8" fill-opacity="0.15"
-                            d="M45.7,-77C59.4,-69.5,70.9,-56.9,78.2,-42.1C85.5,-27.3,88.5,-10.3,86.2,5.9C83.9,22.1,76.3,37.6,66.3,50.7C56.3,63.8,43.9,74.5,29.3,80.1C14.7,85.7,-2.1,86.3,-18.4,81.9C-34.7,77.5,-50.5,68.2,-61.8,55.1C-73.1,42,-79.9,25.1,-82.7,7.2C-85.4,-10.7,-84,-29.6,-75.1,-44.6C-66.2,-59.5,-49.8,-70.5,-33.5,-76.3C-17.2,-82.1,-1,-82.7,14.2,-80.6C29.4,-78.5,45.7,-77,45.7,-77Z"
-                            transform="translate(100 100)" />
-                    </svg>
-                    <div class="bucket-wrapper">
-                        <!-- Custom Inline Clean Bucket Illustration representation for absolute self-containment -->
-                        <svg class="floating-bucket" viewBox="0 0 500 500" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="bucketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#1A73E8" />
-                                    <stop offset="100%" stop-color="#0F172A" />
-                                </linearGradient>
-                                <linearGradient id="lidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#34A853" />
-                                    <stop offset="100%" stop-color="#1A73E8" />
-                                </linearGradient>
-                            </defs>
-                            <!-- Handle -->
-                            <path d="M120 180 C120 50, 380 50, 380 180" stroke="#94A3B8" stroke-width="12" fill="none"
-                                stroke-linecap="round" />
-                            <!-- Bucket Body -->
-                            <path
-                                d="M110 180 L150 440 C152 455, 170 460, 180 460 L320 460 C330 460, 348 455, 350 440 L390 180 Z"
-                                fill="url(#bucketGrad)" />
-                            <!-- Paint Dripping on Can -->
-                            <path d="M110 180 Q130 240, 170 240 Q210 240, 230 180" fill="#EA4335" />
-                            <path d="M230 180 Q250 280, 290 280 Q330 280, 350 180" fill="#FBBC05" />
-                            <!-- Rim/Lid -->
-                            <ellipse cx="250" cy="180" rx="145" ry="25" fill="url(#lidGrad)" />
-                            <!-- Metallic Accent Lines -->
-                            <path d="M150 440 L350 440" stroke="#FFFFFF" stroke-width="4" opacity="0.2" />
-                            <!-- Text overlay -->
-                            <text x="50%" y="340" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF"
-                                font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="28"
-                                letter-spacing="2">GGI PAINTS</text>
-                            <text x="50%" y="375" dominant-baseline="middle" text-anchor="middle" fill="#FBBC05"
-                                font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="16"
-                                letter-spacing="4">PREMIUM QUALITY</text>
-                        </svg>
-                    </div>
+                    <img src="img/ggi_logo.png" alt="GGI Paints Logo" class="hero-logo-img">
                 </div>
             </div>
         </div>
@@ -1565,8 +1777,10 @@
             <div class="product-grid">
                 <!-- Wall Paints -->
                 <div class="product-card product-card--matte glass-card animate-on-scroll" data-aos="fade-up"
-                    data-aos-delay="100">
-                    <span class="product-card__tag">Matte</span>
+                    data-aos-delay="100" data-image="img/matte_paint.jpeg" data-tag="Matt" data-title="Matt Finish"
+                    data-desc="Soft-touch elegance for walls with refined depth, smooth coverage, and a modern non-glare look.">
+                    <span class="product-card__tag">Matt</span>
+                    <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
                         <h3>Matt Finish</h3>
                         <p>Soft-touch elegance for walls with refined depth, smooth coverage, and a modern non-glare
@@ -1575,8 +1789,10 @@
                 </div>
                 <!-- Gate Paints -->
                 <div class="product-card product-card--gloss glass-card animate-on-scroll" data-aos="fade-up"
-                    data-aos-delay="200">
+                    data-aos-delay="200" data-image="img/gloss_paint.jpeg" data-tag="Gloss" data-title="Gloss Shield"
+                    data-desc="High-reflective protection for doors, metalwork, and surfaces that demand bold durability.">
                     <span class="product-card__tag">Gloss</span>
+                    <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
                         <h3>Gloss Shield</h3>
                         <p>High-reflective protection for doors, metalwork, and surfaces that demand bold durability.
@@ -1585,8 +1801,10 @@
                 </div>
                 <!-- Roof Paints -->
                 <div class="product-card product-card--satin glass-card animate-on-scroll" data-aos="fade-up"
-                    data-aos-delay="300">
+                    data-aos-delay="300" data-image="img/satin_paint.jpeg" data-tag="Satin" data-title="Satin Radiance"
+                    data-desc="Elegant sheen with excellent washability for interiors that need a premium polished finish.">
                     <span class="product-card__tag">Satin</span>
+                    <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
                         <h3>Satin Radiance</h3>
                         <p>Elegant sheen with excellent washability for interiors that need a premium polished finish.
@@ -1595,8 +1813,11 @@
                 </div>
                 <!-- Industrial Coatings -->
                 <div class="product-card product-card--emulsion glass-card animate-on-scroll" data-aos="fade-up"
-                    data-aos-delay="400">
+                    data-aos-delay="400" data-image="img/emulsion_paint.jpeg" data-tag="Emulsion"
+                    data-title="Emulsion Luxe"
+                    data-desc="Durable wall coating with smooth texture, vibrant color, and low odor for everyday elegance.">
                     <span class="product-card__tag">Emulsion</span>
+                    <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
                         <h3>Emulsion Luxe</h3>
                         <p>Durable wall coating with smooth texture, vibrant color, and low odor for everyday elegance.
@@ -1605,8 +1826,10 @@
                 </div>
                 <!-- Primers -->
                 <div class="product-card product-card--pop glass-card animate-on-scroll" data-aos="fade-up"
-                    data-aos-delay="500">
+                    data-aos-delay="500" data-image="img/pop_paint.jpeg" data-tag="Pop" data-title="Pop Color"
+                    data-desc="Vivid modern tones crafted to bring energy, personality, and striking visual impact to spaces.">
                     <span class="product-card__tag">Pop</span>
+                    <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
                         <h3>Pop Color</h3>
                         <p>Vivid modern tones crafted to bring energy, personality, and striking visual impact to
@@ -1615,8 +1838,11 @@
                 </div>
                 <!-- Decorative Finishes -->
                 <div class="product-card product-card--textured glass-card animate-on-scroll" data-aos="fade-up"
-                    data-aos-delay="600">
+                    data-aos-delay="600" data-image="img/satin_2_paint.jpeg" data-tag="Textured"
+                    data-title="Textured Finish"
+                    data-desc="Rich textured surface that adds depth and character to any wall or architectural feature.">
                     <span class="product-card__tag">Satin</span>
+                    <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
                         <h3>Satin Radiance</h3>
                         <p>Elegant sheen with excellent washability for interiors that need a premium polished finish.</p>
@@ -1724,7 +1950,7 @@
                         <i class="ri-sparkling-fill"></i>
                     </div>
                     <h4>Premium Finish</h4>
-                    <p>Flawless levels of satin sheen, architectural matte, glossy sheens, and refined rustic texture
+                    <p>Flawless levels of satin sheen, architectural matt, glossy sheens, and refined rustic texture
                         displays.</p>
                 </div>
                 <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="450">
@@ -1810,7 +2036,7 @@
                             alt="Corporate Showroom Painting" class="gallery-img">
                         <div class="gallery-overlay">
                             <h4>Capital Exchange Hall</h4>
-                            <p>Sophisticated matte premium finishes matched to dynamic corporate color profiles.</p>
+                            <p>Sophisticated matt premium finishes matched to dynamic corporate color profiles.</p>
                         </div>
                         <div class="gallery-lightbox-trigger" onclick="openLightbox(this)"><i
                                 class="ri-zoom-in-line"></i></div>
@@ -1826,6 +2052,27 @@
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
         <span class="lightbox-close">&times;</span>
         <img class="lightbox-content" id="lightbox-img" alt="Enlarged Project View">
+    </div>
+
+    <!-- Product Preview Modal -->
+    <div id="product-preview" class="product-preview">
+        <div class="product-preview__backdrop" onclick="closeProductPreview()"></div>
+        <div class="product-preview__content">
+            <button class="product-preview__close" onclick="closeProductPreview()" aria-label="Close preview">
+                <i class="ri-close-line"></i>
+            </button>
+            <div class="product-preview__image-wrapper">
+                <img class="product-preview__image" id="preview-image" src="" alt="Product Preview">
+            </div>
+            <div class="product-preview__details">
+                <span class="product-preview__tag" id="preview-tag"></span>
+                <h3 class="product-preview__title" id="preview-title"></h3>
+                <p class="product-preview__desc" id="preview-desc"></p>
+                <a href="mailto:Paintsggi@gmail.com?subject=Request%20Quote%20for%20Product" class="btn btn-primary" style="margin-top: 20px;">
+                    Request Quote <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- SECTION 6: CONTACT & CTA & FOOTER -->
@@ -2240,6 +2487,67 @@
             // Resume page scroll
             lenis.start();
         }
+
+        // Product Preview Modal Functionality
+        const productPreview = document.getElementById('product-preview');
+        const previewImage = document.getElementById('preview-image');
+        const previewTag = document.getElementById('preview-tag');
+        const previewTitle = document.getElementById('preview-title');
+        const previewDesc = document.getElementById('preview-desc');
+
+        // Map of product card classes to their tag gradient colors
+        const tagColorMap = {
+            'product-card--matte': 'linear-gradient(135deg, #f59e0b, #ef4444)',
+            'product-card--gloss': 'linear-gradient(135deg, #fb923c, #dc2626)',
+            'product-card--satin': 'linear-gradient(135deg, #8b5cf6, #3b82f6)',
+            'product-card--emulsion': 'linear-gradient(135deg, #10b981, #0f766e)',
+            'product-card--pop': 'linear-gradient(135deg, #ec4899, #8b5cf6)',
+            'product-card--textured': 'linear-gradient(135deg, #14b8a6, #0ea5e9)'
+        };
+
+        function openProductPreview(card) {
+            const image = card.getAttribute('data-image');
+            const tag = card.getAttribute('data-tag');
+            const title = card.getAttribute('data-title');
+            const desc = card.getAttribute('data-desc');
+
+            // Find the product card variant class to get the correct tag color
+            let tagGradient = 'linear-gradient(135deg, #1A73E8, #0d47a1)';
+            for (const [className, gradient] of Object.entries(tagColorMap)) {
+                if (card.classList.contains(className)) {
+                    tagGradient = gradient;
+                    break;
+                }
+            }
+
+            previewImage.src = image;
+            previewTag.textContent = tag;
+            previewTag.style.background = tagGradient;
+            previewTitle.textContent = title;
+            previewDesc.textContent = desc;
+
+            productPreview.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            lenis.stop();
+        }
+
+        function closeProductPreview() {
+            productPreview.classList.remove('active');
+            document.body.style.overflow = '';
+            lenis.start();
+        }
+
+        // Add click event listeners to all product cards
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('click', () => openProductPreview(card));
+        });
+
+        // Close product preview with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && productPreview.classList.contains('active')) {
+                closeProductPreview();
+            }
+        });
 
         // Form Submit Handler
         function handleFormSubmit(e) {
