@@ -827,6 +827,25 @@
             background: linear-gradient(135deg, #14b8a6, #0ea5e9);
         }
 
+        .product-card--graffitex {
+            background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.16), rgba(15, 23, 42, 0.3)), url('img/graffitex.jpeg');
+        }
+        .product-card--graffitex .product-card__tag {
+            background: linear-gradient(135deg, #f97316, #b45309);
+        }
+        .product-card--showroom {
+            background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.16), rgba(15, 23, 42, 0.3)), url('img/showroom.jpeg');
+        }
+        .product-card--showroom .product-card__tag {
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+        }
+        .product-card--texture {
+            background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.16), rgba(15, 23, 42, 0.3)), url('img/texture.jpeg');
+        }
+        .product-card--texture .product-card__tag {
+            background: linear-gradient(135deg, #0ea5e9, #0369a1);
+        }
+
         /* SECTION 4 - WHY GGI PAINTS */
         #why-ggi {
             background-color: var(--light);
@@ -1816,11 +1835,11 @@ hero-visual
                     data-aos-delay="400" data-image="img/emulsion_paint.jpeg" data-tag="Emulsion"
                     data-title="Emulsion Luxe"
                     data-desc="Durable wall coating with smooth texture, vibrant color, and low odor for everyday elegance.">
-                    <span class="product-card__tag">Emulsion</span>
+                    <span class="product-card__tag">Graffitex</span>
                     <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
-                        <h3>Emulsion Luxe</h3>
-                        <p>Durable wall coating with smooth texture, vibrant color, and low odor for everyday elegance.
+                        <h3>Graffitex Shield</h3>
+                        <p>Heavy-duty anti-graffiti coating that repels paint, marker, and stain vandalism — making clean-up effortless and surfaces last longer.
                         </p>
                     </div>
                 </div>
@@ -1916,6 +1935,19 @@ hero-visual
                     <p>Engineered with special resins to defend perfectly against high humidity, salty air, and tropical
                         rainfall.</p>
                 </div>
+                <!-- Industrial Coatings -->
+                <div class="product-card product-card--graffitex glass-card animate-on-scroll" data-aos="fade-up"
+                    data-aos-delay="400" data-image="img/graffitex.jpeg" data-tag="Graffitex"
+                    data-title="Graffitex Shield"
+                    data-desc="Heavy-duty anti-graffiti coating that repels paint, marker, and stain vandalism — making clean-up effortless and surfaces last longer.">
+                    <span class="product-card__tag">Graffitex</span>
+                    <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
+                    <div class="product-card__content">
+                        <h3>Graffitex Shield</h3>
+                        <p>Heavy-duty anti-graffiti coating that repels paint, marker, and stain vandalism — making clean-up effortless and surfaces last longer.
+                        </p>
+                    </div>
+                </div>
                 <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon-wrapper" style="color: var(--yellow); background: rgba(251, 188, 5, 0.1);">
                         <i class="ri-sun-line"></i>
@@ -1931,6 +1963,19 @@ hero-visual
                     <p>Very low VOC and odor emissions, ensuring human-safe indoor air levels immediately following
                         dynamic applications.</p>
                 </div>
+                 <!-- Industrial Coatings -->
+                <div class="product-card product-card--showroom glass-card animate-on-scroll" data-aos="fade-up"
+                    data-aos-delay="400" data-image="img/showroom.jpeg" data-tag="Showroom"
+                    data-title="Showroom Gloss"
+                    data-desc="Showroom-grade high-gloss finish that delivers mirror-like clarity and depth — perfect for statement walls, reception areas, and luxury interiors.">
+                    <span class="product-card__tag">Showroom</span>
+                    <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
+                    <div class="product-card__content">
+                        <h3>Showroom Gloss</h3>
+                        <p>Showroom-grade high-gloss finish that delivers mirror-like clarity and depth — perfect for statement walls, reception areas, and luxury interiors.
+                        </p>
+                    </div>
+                </div>
                 <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon-wrapper"><i class="ri-shield-flash-line"></i></div>
                     <h4>Long Lasting</h4>
@@ -1944,6 +1989,19 @@ hero-visual
                     <h4>Quick Drying</h4>
                     <p>Fast dry-to-touch rates allow decorators to run successive coat sessions swiftly within minimal
                         turnaround windows.</p>
+                </div>
+                 <!-- Industrial Coatings -->
+                <div class="product-card product-card--texture glass-card animate-on-scroll" data-aos="fade-up"
+                    data-aos-delay="400" data-image="img/texture.jpeg" data-tag="Texture"
+                    data-title="Texture Elite"
+                    data-desc="Artisanal textured coating that sculpts bold, dimensional surfaces — bringing tactile richness and architectural character to any interior or exterior wall.">
+                    <span class="product-card__tag">Texture</span>
+                    <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
+                    <div class="product-card__content">
+                        <h3>Texture Elite</h3>
+                        <p>Artisanal textured coating that sculpts bold, dimensional surfaces — bringing tactile richness and architectural character to any interior or exterior wall.
+                        </p>
+                    </div>
                 </div>
                 <div class="feature-card animate-on-scroll" data-aos="fade-up" data-aos-delay="400">
                     <div class="feature-icon-wrapper" style="color: var(--yellow); background: rgba(251, 188, 5, 0.1);">
@@ -2502,7 +2560,10 @@ hero-visual
             'product-card--satin': 'linear-gradient(135deg, #8b5cf6, #3b82f6)',
             'product-card--emulsion': 'linear-gradient(135deg, #10b981, #0f766e)',
             'product-card--pop': 'linear-gradient(135deg, #ec4899, #8b5cf6)',
-            'product-card--textured': 'linear-gradient(135deg, #14b8a6, #0ea5e9)'
+            'product-card--textured': 'linear-gradient(135deg, #14b8a6, #0ea5e9)',
+            'product-card--graffitex': 'linear-gradient(135deg, #f97316, #b45309)',
+            'product-card--showroom': 'linear-gradient(135deg, #6366f1, #4f46e5)',
+            'product-card--texture': 'linear-gradient(135deg, #0ea5e9, #0369a1)'
         };
 
         function openProductPreview(card) {
