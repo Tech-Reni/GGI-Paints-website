@@ -1075,18 +1075,23 @@
         .product-card--graffitex {
             background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.16), rgba(15, 23, 42, 0.3)), url('img/graffitex.jpeg');
         }
+
         .product-card--graffitex .product-card__tag {
             background: linear-gradient(135deg, #f97316, #b45309);
         }
+
         .product-card--showroom {
             background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.16), rgba(15, 23, 42, 0.3)), url('img/showroom.jpeg');
         }
+
         .product-card--showroom .product-card__tag {
             background: linear-gradient(135deg, #6366f1, #4f46e5);
         }
+
         .product-card--texture {
             background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.16), rgba(15, 23, 42, 0.3)), url('img/texture.jpeg');
         }
+
         .product-card--texture .product-card__tag {
             background: linear-gradient(135deg, #0ea5e9, #0369a1);
         }
@@ -1321,6 +1326,7 @@
                 opacity: 0;
                 transform: scale(0.9) translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: scale(1) translateY(0);
@@ -1913,7 +1919,9 @@
                 padding: 8px 16px;
                 font-size: 0.85rem;
             }
-hero-visual
+
+            hero-visual
+
             /* Form Elements */
             .contact-form-wrapper {
                 padding: 24px 16px;
@@ -1981,7 +1989,7 @@ hero-visual
                 <ul class="nav-links" id="nav-links">
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#products">Products</a></li>
-                    <li><a href="#why-ggi">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="nav-right">
@@ -2003,18 +2011,31 @@ hero-visual
     <section id="hero">
         <div class="container">
             <div class="hero-grid">
+                <!-- REPLACE THE EXISTING <div class="hero-content"> inside SECTION 1: HERO WITH THIS -->
                 <div class="hero-content" data-aos="fade-up">
                     <div class="badge" data-aos="fade-up">
-                        <i class="ri-award-line"></i> Nigeria's Leading Premium Paint Manufacturer
+                        <i class="ri-award-line"></i> Proudly Nigerian Manufacturer
                     </div>
                     <h1 class="hero-title animate-text" data-aos="fade-up" data-aos-delay="100">
-                        Premium Paints For <span>Every Surface</span>
+                        Welcome to <span>GGI PAINTS</span>
                     </h1>
-                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                        Transform your walls, gates, roofs and buildings with superior quality paints engineered for
-                        durability, vibrant longevity, and unmatched beauty.
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" style="margin-bottom: 16px;">
+                        Welcome to GGI PAINTS, a premium paint brand proudly manufactured by WALEGGI AND SONS INDUSTRY,
+                        an indigenous manufacturing company committed to producing high-quality paints and allied
+                        products.
                     </p>
-                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                    <!-- <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="250"
+                        style="font-size: 1.05rem; margin-bottom: 24px; opacity: 0.9;">
+                        With a focus on quality, innovation, and durability, we provide decorative, protective, and
+                        industrial coating solutions that enhance and protect residential, commercial, and industrial
+                        spaces. Every GGI PAINTS product is crafted to deliver exceptional performance, lasting beauty,
+                        and outstanding value.
+                    </p> -->
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300"
+                        style="font-size: 1.15rem; font-weight: 700; color: var(--primary); margin-bottom: 32px;">
+                        GGI PAINTS... Colouring the Future with Quality and Excellence.
+                    </p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="350">
                         <a href="#products" class="btn btn-primary">
                             Explore Products <i class="ri-arrow-right-line"></i>
                         </a>
@@ -2084,7 +2105,8 @@ hero-visual
                     <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
                         <h3>Emulsion Luxe</h3>
-                        <p>Durable wall coating with smooth texture, vibrant color, and low odor for everyday elegance.</p>
+                        <p>Durable wall coating with smooth texture, vibrant color, and low odor for everyday elegance.
+                        </p>
                     </div>
                 </div>
                 <!-- Primers -->
@@ -2108,7 +2130,8 @@ hero-visual
                     <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
                         <h3>Satin Radiance</h3>
-                        <p>Elegant sheen with excellent washability for interiors that need a premium polished finish.</p>
+                        <p>Elegant sheen with excellent washability for interiors that need a premium polished finish.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -2119,7 +2142,7 @@ hero-visual
     <section id="color-chart" class="section-padding color-chart-section">
         <div class="container">
             <div class="color-chart-layout">
-                <div class="color-chart-visual" data-aos="fade-right">
+                <div class="color-chart-visual" style="text-align: center;" data-aos="fade-right">
                     <div class="color-swatch-grid">
                         <div class="color-swatch" style="background: #1A73E8;"></div>
                         <div class="color-swatch" style="background: #34A853;"></div>
@@ -2137,13 +2160,20 @@ hero-visual
                     <div class="color-chart-file-icon">
                         <i class="ri-file-pdf-2-line"></i>
                     </div>
+                    <a href="GGI HIGH QUALITY PAINT.pdf" download class="btn btn-download-chart">
+                        <i class="ri-download-2-line"></i>
+                        Download Color Chart
+                        <span class="btn-file-info">PDF · 2.4 MB</span>
+                    </a>
                 </div>
                 <div class="color-chart-content" data-aos="fade-left">
                     <div class="badge"><i class="ri-palette-line"></i> GGI Color Library</div>
-                    <h2 class="section-title">Explore Our Complete <span class="text-gradient">Color Spectrum</span></h2>
+                    <h2 class="section-title">Explore Our Complete <span class="text-gradient">Color Spectrum</span>
+                    </h2>
                     <p class="section-desc">
                         Download the official GGI HIGH QUALITY PAINT color chart — a comprehensive catalog of every
-                        color, finish, and formulation we produce. From elegant neutrals to bold statement hues, find the
+                        color, finish, and formulation we produce. From elegant neutrals to bold statement hues, find
+                        the
                         perfect shade for your next project.
                     </p>
                     <div class="color-chart-benefits">
@@ -2164,11 +2194,6 @@ hero-visual
                             <span>Free digital download — instant access</span>
                         </div>
                     </div>
-                    <a href="GGI HIGH QUALITY PAINT.pdf" download class="btn btn-download-chart">
-                        <i class="ri-download-2-line"></i>
-                        Download Color Chart
-                        <span class="btn-file-info">PDF · 2.4 MB</span>
-                    </a>
                 </div>
             </div>
         </div>
@@ -2247,7 +2272,8 @@ hero-visual
                     <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
                         <h3>Graffitex Shield</h3>
-                        <p>Heavy-duty anti-graffiti coating that repels paint, marker, and stain vandalism — making clean-up effortless and surfaces last longer.
+                        <p>Heavy-duty anti-graffiti coating that repels paint, marker, and stain vandalism — making
+                            clean-up effortless and surfaces last longer.
                         </p>
                     </div>
                 </div>
@@ -2266,16 +2292,16 @@ hero-visual
                     <p>Very low VOC and odor emissions, ensuring human-safe indoor air levels immediately following
                         dynamic applications.</p>
                 </div>
-                 <!-- Industrial Coatings -->
+                <!-- Industrial Coatings -->
                 <div class="product-card product-card--showroom glass-card animate-on-scroll" data-aos="fade-up"
-                    data-aos-delay="400" data-image="img/showroom.jpeg" data-tag="Showroom"
-                    data-title="Showroom Gloss"
+                    data-aos-delay="400" data-image="img/showroom.jpeg" data-tag="Showroom" data-title="Showroom Gloss"
                     data-desc="Showroom-grade high-gloss finish that delivers mirror-like clarity and depth — perfect for statement walls, reception areas, and luxury interiors.">
                     <span class="product-card__tag">Showroom</span>
                     <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
                         <h3>Showroom Gloss</h3>
-                        <p>Showroom-grade high-gloss finish that delivers mirror-like clarity and depth — perfect for statement walls, reception areas, and luxury interiors.
+                        <p>Showroom-grade high-gloss finish that delivers mirror-like clarity and depth — perfect for
+                            statement walls, reception areas, and luxury interiors.
                         </p>
                     </div>
                 </div>
@@ -2293,16 +2319,16 @@ hero-visual
                     <p>Fast dry-to-touch rates allow decorators to run successive coat sessions swiftly within minimal
                         turnaround windows.</p>
                 </div>
-                 <!-- Industrial Coatings -->
+                <!-- Industrial Coatings -->
                 <div class="product-card product-card--texture glass-card animate-on-scroll" data-aos="fade-up"
-                    data-aos-delay="400" data-image="img/texture.jpeg" data-tag="Texture"
-                    data-title="Texture Elite"
+                    data-aos-delay="400" data-image="img/texture.jpeg" data-tag="Texture" data-title="Texture Elite"
                     data-desc="Artisanal textured coating that sculpts bold, dimensional surfaces — bringing tactile richness and architectural character to any interior or exterior wall.">
                     <span class="product-card__tag">Texture</span>
                     <div class="product-card__preview-icon"><i class="ri-zoom-in-line"></i></div>
                     <div class="product-card__content">
                         <h3>Texture Elite</h3>
-                        <p>Artisanal textured coating that sculpts bold, dimensional surfaces — bringing tactile richness and architectural character to any interior or exterior wall.
+                        <p>Artisanal textured coating that sculpts bold, dimensional surfaces — bringing tactile
+                            richness and architectural character to any interior or exterior wall.
                         </p>
                     </div>
                 </div>
@@ -2429,7 +2455,8 @@ hero-visual
                 <span class="product-preview__tag" id="preview-tag"></span>
                 <h3 class="product-preview__title" id="preview-title"></h3>
                 <p class="product-preview__desc" id="preview-desc"></p>
-                <a href="mailto:Paintsggi@gmail.com?subject=Request%20Quote%20for%20Product" class="btn btn-primary" style="margin-top: 20px;">
+                <a href="mailto:Paintsggi@gmail.com?subject=Request%20Quote%20for%20Product" class="btn btn-primary"
+                    style="margin-top: 20px;">
                     Request Quote <i class="ri-arrow-right-line"></i>
                 </a>
             </div>
@@ -2540,7 +2567,7 @@ hero-visual
                 <div class="footer-links">
                     <a href="#hero">Privacy Policy</a>
                     <a href="#products">Quality Standards</a>
-                    <a href="#about">Technical Data Sheets</a>
+                    <a href="about.html">Who we are</a>
                     <a href="#contact">Contact Support</a>
                 </div>
             </div>
