@@ -487,6 +487,251 @@
             color: var(--dark);
         }
 
+        /* COLOR CHART DOWNLOAD SECTION */
+        .color-chart-section {
+            background: linear-gradient(135deg, rgba(26, 115, 232, 0.04) 0%, rgba(52, 168, 83, 0.03) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .color-chart-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(26, 115, 232, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .color-chart-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .color-chart-visual {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background: var(--white);
+            border-radius: 24px;
+            border: 1px solid var(--gray-200);
+            box-shadow: 0 20px 50px -15px rgba(15, 23, 42, 0.1);
+            transition: var(--transition);
+            min-height: 400px;
+        }
+
+        .dark-mode .color-chart-visual {
+            background: var(--light);
+            border-color: var(--glass-border);
+        }
+
+        .color-swatch-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            width: 100%;
+            max-width: 320px;
+            padding: 16px;
+            border-radius: 16px;
+            background: var(--gray-100);
+            box-shadow: inset 0 2px 8px rgba(15, 23, 42, 0.04);
+        }
+
+        .dark-mode .color-swatch-grid {
+            background: var(--gray-200);
+        }
+
+        .color-swatch {
+            aspect-ratio: 1;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .color-swatch:hover {
+            transform: scale(1.15);
+            z-index: 2;
+            box-shadow: 0 6px 20px rgba(15, 23, 42, 0.2);
+        }
+
+        .color-swatch:last-child {
+            border: 2px solid var(--gray-200);
+        }
+
+        .color-chart-file-icon {
+            margin-top: 24px;
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            background: var(--gradient-multi);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            color: #FFFFFF;
+            box-shadow: 0 8px 24px rgba(26, 115, 232, 0.25);
+            animation: float 4s infinite ease-in-out;
+        }
+
+        .color-chart-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text-gradient {
+            background: var(--gradient-multi);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .color-chart-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 36px;
+        }
+
+        .chart-benefit {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .chart-benefit i {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(52, 168, 83, 0.12);
+            color: var(--green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .dark-mode .chart-benefit {
+            color: var(--white);
+        }
+
+        .btn-download-chart {
+            background: var(--gradient-multi);
+            color: #FFFFFF;
+            border: none;
+            padding: 18px 36px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            box-shadow: 0 8px 28px rgba(26, 115, 232, 0.3);
+            position: relative;
+            overflow: hidden;
+            gap: 12px;
+            align-self: flex-start;
+        }
+
+        .btn-download-chart:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 36px rgba(26, 115, 232, 0.4);
+        }
+
+        .btn-download-chart i {
+            font-size: 1.3rem;
+        }
+
+        .btn-file-info {
+            display: inline-block;
+            padding: 4px 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        /* Color Chart Responsive */
+        @media (max-width: 991px) {
+            .color-chart-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .color-chart-visual {
+                order: -1;
+                min-height: 320px;
+                padding: 30px;
+            }
+
+            .color-swatch-grid {
+                max-width: 260px;
+            }
+
+            .btn-download-chart {
+                align-self: center;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .color-chart-content {
+                text-align: center;
+                align-items: center;
+            }
+
+            .color-chart-content .section-desc {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .color-chart-benefits {
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .color-chart-visual {
+                min-height: 260px;
+                padding: 24px 16px;
+            }
+
+            .color-swatch-grid {
+                max-width: 220px;
+                gap: 8px;
+                padding: 12px;
+            }
+
+            .color-chart-file-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.8rem;
+            }
+
+            .color-chart-benefits {
+                gap: 12px;
+            }
+
+            .chart-benefit {
+                font-size: 0.9rem;
+            }
+
+            .btn-download-chart {
+                padding: 16px 24px;
+                font-size: 0.95rem;
+            }
+        }
+
         /* SECTION 1 - HERO */
         #hero {
             position: relative;
@@ -1865,6 +2110,65 @@ hero-visual
                         <h3>Satin Radiance</h3>
                         <p>Elegant sheen with excellent washability for interiors that need a premium polished finish.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COLOR CHART DOWNLOAD SECTION -->
+    <section id="color-chart" class="section-padding color-chart-section">
+        <div class="container">
+            <div class="color-chart-layout">
+                <div class="color-chart-visual" data-aos="fade-right">
+                    <div class="color-swatch-grid">
+                        <div class="color-swatch" style="background: #1A73E8;"></div>
+                        <div class="color-swatch" style="background: #34A853;"></div>
+                        <div class="color-swatch" style="background: #FBBC05;"></div>
+                        <div class="color-swatch" style="background: #EA4335;"></div>
+                        <div class="color-swatch" style="background: #8B5CF6;"></div>
+                        <div class="color-swatch" style="background: #F59E0B;"></div>
+                        <div class="color-swatch" style="background: #EC4899;"></div>
+                        <div class="color-swatch" style="background: #14B8A6;"></div>
+                        <div class="color-swatch" style="background: #6366F1;"></div>
+                        <div class="color-swatch" style="background: #F97316;"></div>
+                        <div class="color-swatch" style="background: #0F172A;"></div>
+                        <div class="color-swatch" style="background: #FFFFFF;"></div>
+                    </div>
+                    <div class="color-chart-file-icon">
+                        <i class="ri-file-pdf-2-line"></i>
+                    </div>
+                </div>
+                <div class="color-chart-content" data-aos="fade-left">
+                    <div class="badge"><i class="ri-palette-line"></i> GGI Color Library</div>
+                    <h2 class="section-title">Explore Our Complete <span class="text-gradient">Color Spectrum</span></h2>
+                    <p class="section-desc">
+                        Download the official GGI HIGH QUALITY PAINT color chart — a comprehensive catalog of every
+                        color, finish, and formulation we produce. From elegant neutrals to bold statement hues, find the
+                        perfect shade for your next project.
+                    </p>
+                    <div class="color-chart-benefits">
+                        <div class="chart-benefit">
+                            <i class="ri-check-line"></i>
+                            <span>100+ curated color variants</span>
+                        </div>
+                        <div class="chart-benefit">
+                            <i class="ri-check-line"></i>
+                            <span>Includes matte, gloss, satin & textured finishes</span>
+                        </div>
+                        <div class="chart-benefit">
+                            <i class="ri-check-line"></i>
+                            <span>Professional grade color accuracy</span>
+                        </div>
+                        <div class="chart-benefit">
+                            <i class="ri-check-line"></i>
+                            <span>Free digital download — instant access</span>
+                        </div>
+                    </div>
+                    <a href="GGI HIGH QUALITY PAINT.pdf" download class="btn btn-download-chart">
+                        <i class="ri-download-2-line"></i>
+                        Download Color Chart
+                        <span class="btn-file-info">PDF · 2.4 MB</span>
+                    </a>
                 </div>
             </div>
         </div>
